@@ -159,14 +159,14 @@ def main():
     subparsers = parser.add_subparsers(dest='command', required=True)
 
     # Encrypt Command
-    encrypt_parser = subparsers.add_parser('encrypt', help='Encrypt a file.')
+    encrypt_parser = subparsers.add_parser('e', help='Encrypt a file.')
     encrypt_parser.add_argument('-i', '--input', required=True, help='Input file path')
     encrypt_parser.add_argument('-o', '--output', required=True, help='Output file path')
     encrypt_parser.add_argument('-k', '--keys', required=True, help='Key file path')
     encrypt_parser.add_argument('-t', '--times', type=int, required=True, help='Number of times to apply encryption')
 
     # Decrypt Command
-    decrypt_parser = subparsers.add_parser('decrypt', help='Decrypt a file.')
+    decrypt_parser = subparsers.add_parser('d', help='Decrypt a file.')
     decrypt_parser.add_argument('-i', '--input', required=True, help='Input file path')
     decrypt_parser.add_argument('-k', '--keys', required=True, help='Key file path')
     decrypt_parser.add_argument('-o', '--output', required=True, help='Output file path')

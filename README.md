@@ -4,7 +4,7 @@ This code uses random multiple methods for encoding with `fernet`, `aes`, `aes_g
 ## install
 ```bash
 git clone https://github.com/dr3xxine/multi-layer-encryption.git
-cd multi_layer_encryption
+cd multi-layer-encryption
 pip install -r requirements.txt
 ```
 ## Usage
