@@ -1,5 +1,12 @@
 # Multi layer encryption idea
+This code uses random multiple methods for encoding with `fernet`, `aes`, `aes_gcm`, `chacha20`, `blowfish` methods.
 
+## install
+```bash
+git clone https://github.com/dr3xxine/multi-layer-encryption.git
+cd multi_layer_encryption
+pip install -r requirements.txt
+```
 ## Usage
 encrypt:
 ```bash

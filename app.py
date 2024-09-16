@@ -173,9 +173,9 @@ def main():
 
     args = parser.parse_args()
 
-    if args.command == 'encrypt':
+    if args.command == 'e':
         encrypt(args.input, args.output, args.keys, args.times)
-    elif args.command == 'decrypt':
+    elif args.command == 'd':
         decrypt(args.input, args.keys, args.output)
 
 if __name__ == '__main__':
